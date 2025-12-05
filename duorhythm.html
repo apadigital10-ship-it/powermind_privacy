@@ -63,4 +63,70 @@
     </header>
 
     <section aria-label="summary">
-      <p><strong>DuoRhythm</strong> is an offline-first app that helps users alternate between mental focus sessions and physical workouts. This app is built with privacy and minimalism in mind. DuoRhythm collects <strong>no personal data</strong>, does not use third-party analytics or ads, an
+      <p><strong>DuoRhythm</strong> is an offline-first app that helps users alternate between mental focus sessions and physical workouts. This app is built with privacy and minimalism in mind. DuoRhythm collects <strong>no personal data</strong>, does not use third-party analytics or ads, and works fully offline.</p>
+    </section>
+
+    <h2>What data we collect</h2>
+    <p><strong>Short answer:</strong> We collect no personal data and do not send any personal information to servers or third parties.</p>
+    <ul>
+      <li><strong>No account required:</strong> DuoRhythm does not require an account or login.</li>
+      <li><strong>No remote analytics:</strong> The app does not include analytics SDKs, crash reporting, or tracking tools that send data off-device.</li>
+      <li><strong>Local-only data:</strong> Any usage data (session logs, water intake logs, custom workouts, local settings, or Vault history) is stored locally on the device only, unless the user explicitly exports it.</li>
+    </ul>
+
+    <h2>Local storage & exports</h2>
+    <p>DuoRhythm stores data locally on your device to enable features such as session history, saved workouts, and hydration logs. Export options (CSV / JSON) are available in the app and only run when you explicitly choose them. Exported files are saved to your device's file storage and are not transmitted anywhere by the app.</p>
+
+    <h2>Notifications</h2>
+    <p>DuoRhythm can use local device notifications to remind you about sessions, workouts, or hydration. Notification scheduling is handled locally on the device via the operating system (Android / iOS). We do not send push notifications via a server, and the app does not collect or transmit data to deliver notifications.</p>
+
+    <h2>Audio, TTS & bundled assets</h2>
+    <p>All audio files (soundscapes, binaural beats) are bundled inside the app package. Text-to-speech uses your device's native TTS engines (Android <code>TextToSpeech</code>, iOS <code>AVSpeechSynthesizer</code>) and runs locally. Nothing is sent to cloud TTS services.</p>
+
+    <h2>No advertising, no third parties</h2>
+    <p>DuoRhythm contains <strong>no advertisements</strong> and does not integrate ad networks or SDKs. We do not share data with any third parties for marketing or profiling.</p>
+
+    <h2>Permissions</h2>
+    <p>The app requests only the permissions necessary for its offline functionality. Typical permissions may include:</p>
+    <ul>
+      <li><strong>Notifications:</strong> To show local reminders and timers.</li>
+      <li><strong>Storage / Files (optional):</strong> To allow export or import of local files (CSV/JSON).</li>
+    </ul>
+    <p>You can disable or revoke these permissions at any time using your device settings; revoking permissions may limit the related features in the app.</p>
+
+    <h2>Children</h2>
+    <p>DuoRhythm is not designed to collect information from children. Because the app collects no personal data and does not require registration, no special child-directed data processing occurs. If a parent wishes to remove the app data from a child's device, they can uninstall the app or clear the app storage via device settings.</p>
+
+    <h2>User rights & data deletion</h2>
+    <p>Because DuoRhythm stores data only on the user's device, there is no remote profile to delete. To remove local data you can:</p>
+    <ol>
+      <li>Use the app's built-in export/clear features (if provided) to back up then clear local logs.</li>
+      <li>Uninstall the app, which normally removes its local storage.</li>
+      <li>Clear the app storage from your device settings.</li>
+    </ol>
+
+    <h2>Security</h2>
+    <p>We take reasonable steps to protect local data on the device. Because the app is offline-first, there is no central server or cloud storage that could be breached. Users are encouraged to secure their devices (screen lock, encryption) to protect local app data.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>We may update this Privacy Policy occasionally to reflect changes in the app. If we make material changes that affect how data is handled, we will update the "Effective date" and surface a notice inside the app where appropriate. Continued use of DuoRhythm after changes indicates acceptance of the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions or concerns about this policy, please contact us:</p>
+    <div class="contact">
+      <div class="small">Email:</div>
+      <div><a href="mailto:privacy@duorhythm.app">apadigital10@gmail.com</a></div>
+    </div>
+
+    <footer>
+      <div><strong>Summary:</strong> DuoRhythm collects no personal data, contains no ads, and works entirely offline. Your data is stored only on your device and exported only when you choose to export it.</div>
+      <div style="margin-top:8px;">© <span id="year"></span> DuoRhythm. All rights reserved.</div>
+    </footer>
+  </main>
+
+  <script>
+    // Small script to update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
